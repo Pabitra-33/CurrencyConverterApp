@@ -4,6 +4,7 @@ using namespace std;
 int new_option;
 
 // Function for operations in Currency Converter
+
 void currency_converter(){
 
     cout << "Available options for currency conversion are:" << endl;
@@ -12,11 +13,10 @@ void currency_converter(){
     cout << "3. Convert to Japanese Yen" << endl;
     cout << "\n";
 
-
     int option;
     cout << "Your option: ";
     cin >> option;
-    float inr;
+    float inr;//for money calculation
 
     switch(option)
     {
@@ -53,7 +53,7 @@ void currency_converter(){
 
             cout << "Your option: ";
             cin >> new_option;
-            
+
             if (new_option == 1){
                 currency_converter();
             }
